@@ -4,8 +4,45 @@ body {
     font-family: Arial, sans-serif;
     background-color: #211a1a;
     color: #f9f5f5;
+    background-image: url(https://stsci-opo.org/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png);
 }
 
 h1 {
     color: rgb(231, 75, 197);
 }
+
+.barra_superior{
+    display: flex;
+    list-style: none;
+    background-color: #211a1a;
+    padding: 2.5%;
+    font-family: 'arial black'; /*arial black Trebuchet MS impact*/
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    margin:0; 
+    
+
+    
+}
+
+.barra_superior a{
+    text-decoration: none;
+    text-align: center;
+    color: #f9f5f5;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+}
+
+.barra_superior li:hover{
+    background-color:rgb(253, 207, 23) ; /*rgb(253, 207, 23) rgb(38, 11, 84)*/
+    color: rgb(24, 10, 71);
+    
+}
+
