@@ -1,0 +1,11 @@
+/* estilo.css me sirve para ponerlo todo mas bonito */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #211a1a;
+    color: #f9f5f5;
+}
+
+h1 {
+    color: rgb(231, 75, 197);
+}
