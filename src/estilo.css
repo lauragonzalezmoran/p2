@@ -4,19 +4,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #211a1a;
     color: #f9f5f5;
-    background-image: url(https://stsci-opo.org/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png);
+    align-items: end;
+     
+
 }
 
-h1 {
-    color: rgb(231, 75, 197);
-}
 
 .barra_superior{
     display: flex;
     list-style: none;
     background-color: #211a1a;
     padding: 2.5%;
-    font-family: 'arial black'; /*arial black Trebuchet MS impact*/
+    font-family: 'arial black'; /*arial black Trebuchet MS impact */
     flex-wrap:nowrap;
     justify-content: space-evenly;
     align-items: center;
@@ -25,7 +24,6 @@ h1 {
     position: fixed;
     top: 0;
     margin:0; 
-    
 
     
 }
@@ -37,12 +35,63 @@ h1 {
     display: block;
     margin-left: 5%;
     margin-right: 5%;
+    transition: color 0.35s; 
  
 }
 
-.barra_superior li:hover{
-    background-color:rgb(253, 207, 23) ; /*rgb(253, 207, 23) rgb(38, 11, 84)*/
-    color: rgb(24, 10, 71);
+
+
+.barra_superior li a:hover{
+    background-color:rgb(253, 207, 23); /*rgb(253, 207, 23) rgb(38, 11, 84)*/
+    color: rgb(23, 9, 69); /*rgb(24, 10, 71)*/
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     
 }
+
+#museo:target, #noticias:target , #hall-of-fame:target, #wishlist:target{
+    display: block;
+    position:static;
+    color: #f9f5f5;
+    margin-top: 15%;
+    
+    
+}
+
+#inicio:target{
+    display: block;
+    width:800px;
+    height: 500px;
+    background-image: url(https://stsci-opo.org/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-color: aliceblue;
+
+}
+
+
+
+#inicio, #museo,
+#noticias,
+#hall-of-fame,
+#wishlist {
+    display: none;
+    margin-top: 0px;
+}
+
+
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+    
+    width:fit-content;
+}
+
+
+
 
