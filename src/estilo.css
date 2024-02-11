@@ -16,6 +16,7 @@ body {
     background-color: #211a1a;
     padding: 2.5%;
     font-family: 'arial black'; /*arial black Trebuchet MS impact */
+    
     flex-wrap:nowrap;
     justify-content: space-evenly;
     align-items: center;
@@ -42,7 +43,7 @@ body {
 
 
 .barra_superior li a:hover{
-    background-color:rgb(253, 207, 23); /*rgb(253, 207, 23) rgb(38, 11, 84)*/
+    background-color:rgb(65, 67, 139); /*rgb(253, 207, 23) rgb(38, 11, 84)*//*
     color: rgb(23, 9, 69); /*rgb(24, 10, 71)*/
     border-radius: 5px;
     margin-left: 5%;
@@ -83,14 +84,25 @@ body {
 
 
 
-.contenido {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 40px;
-    
-    width:fit-content;
+
+*/
+
+.indice{
+    display:grid; 
+    grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-gap: 1em 1em;
 }
+
+#catalogo_de_imagenes{
+    display:grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
 
 
 
