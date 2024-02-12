@@ -157,6 +157,11 @@ body {
     height: 100%;
 }
 
+#hall_of_fame img{
+    width: 100px;
+    height: 10px;
+}
+
 iframe{
     width: 100%;
     height: 400px;
@@ -166,16 +171,17 @@ iframe{
 
 #catalogo_de_imagenes{
     display: grid;
-    grid-template-columns: 3fr ; /* Divide la tabla en tres columnas de igual ancho */
+    grid-template-columns: 3fr  ; /* Divide la tabla en tres columnas de igual ancho */
     grid-template-rows: auto;
     justify-content: left;
     color: rgb(238, 244, 242);
-    border:1px solid white; 
+    
+    
     
 }
 
 .titulo-imagen{
-    color:pink;
+    color:rgb(131, 138, 237);
     text-align: center;
     font-family: arial black;
     font-size: 1.5vw;
@@ -193,8 +199,19 @@ iframe{
     #catalogo_de_imagenes td {
       display: block; /* Cada celda se mostrará como un bloque */
       width: 100%; /* Ocupa todo el ancho disponible */
-      text-align: left; /* Alinea el texto a la izquierda */
+      text-align: center; /* Alinea el texto a la izquierda */
+      font-size: 3vw;
+      
     }
+    .titulo-imagen{
+        color:rgb(131, 138, 237);
+        text-align: center;
+        font-family: arial black;
+        font-size: 1.5vw;
+        border: 250px;
+    }
+    
+
   }
 
  
