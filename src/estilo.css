@@ -1,7 +1,7 @@
 /* estilo.css me sirve para ponerlo todo mas bonito */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background-color: #211a1a;
     color: #f9f5f5;
     align-items: end;
@@ -36,7 +36,7 @@ body {
     display: block;
     margin-left: 5%;
     margin-right: 5%;
-    transition: color 0.35s; 
+    transition: color 0.45s; 
  
 }
 
@@ -151,6 +151,83 @@ body {
     color:rgb(221, 54, 132); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospaced black;
 }
+
+#catalogo_de_imagenes img {
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    padding: 0%;
+}
+
+
+#catalogo_de_imagenes{
+    display: grid;
+    grid-template-columns: 3fr ; /* Divide la tabla en tres columnas de igual ancho */
+    grid-template-rows: auto;
+    justify-content: left;
+    color: rgb(238, 244, 242);
+    border:1px solid white; 
+    
+}
+
+.titulo-imagen{
+    color:pink;
+    text-align: center;
+    font-family: arial black;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    /* Si el ancho de la pantalla es menor o igual a 600px */
+    #catalogo_de_imagenes {
+      display: block; /* Cambia el modo de visualización a bloque */
+    }
+    #catalogo_de_imagenes tr {
+      display: block; /* Cada fila se mostrará como un bloque */
+      margin-bottom: 20px; /* Espacio entre cada fila */
+    }
+    #catalogo_de_imagenes td {
+      display: block; /* Cada celda se mostrará como un bloque */
+      width: 100%; /* Ocupa todo el ancho disponible */
+      text-align: left; /* Alinea el texto a la izquierda */
+    }
+  }
+
+ 
+
+span {
+  font-family: arial black;
+  font-size: 1.2em; 
+  font-size: em;
+  position: relative;
+  top: 50%;
+  margin: 0.5em;
+  left: 0;
+  
+  background-image: linear-gradient(rgb(65, 67, 139),rgb(65, 67, 139));
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+span:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+
+
+
+
+
+
+
 
 
 
