@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura's Space Hub</title>
+    <title>The Space Hub</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -20,7 +20,9 @@
        
         <main class="contenido">
             <section id="inicio">
-                <p> Estamos dentro del inicio </p>   
+                <!--<p> Estamos dentro del inicio </p>   -->
+                <img class="imagenPrincipal" src="https://stsci-opo.org/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png">
+                <p id="SpaceHubTitle"> Welcome to <br> The Space Hub</p>
             </section>
             <section id="museo">
 
@@ -118,7 +120,8 @@
             </section>
 
             <section id="noticias">
-                <h2 class="headings noticias"> How to build an internet on Mars</h2>
+                <h1 class="h1 noticias">Space News</h1>
+                <h2 class="h2 noticias"> How to build an internet on Mars</h2>
                 <iframe src="https://www.sciencenews.org/article/mars-internet-communication-rover-psyche" width="500" height="700" ></iframe>
                 
                 
@@ -138,11 +141,101 @@
 
             </section>
             <section id="hall-of-fame">
-                <p> Estamos dentro del apartado Galactic Exploration Hall of Fame </p> 
-                
+                <!-- <p> Estamos dentro del apartado Galactic Exploration Hall of Fame </p> -->
+            <p class="articuloHallOfFame">
+                <h2>Project Mercury</h2>
+                <p>Project Mercury, the first U.S. program to put humans in space, made 25 flights, six of which carried astronauts between 1961 and 1963. The objectives of the program were: to orbit a human spacecraft around Earth, to investigate a person’s ability to function in space, and to recover both the astronaut and spacecraft safely. More than 2 million people from government agencies and the aerospace industry combined their skills, initiative and experience to make the project possible. Mercury showed that humans could function for periods up to 34 hours of weightless flight.</p>
+                <img src="https://www.nasa.gov/wp-content/uploads/static/60counting/img/mercury7.jpg" alt="Project Mercury">
+            </p>
+            <p class="articuloHallOfFame">
+                <h2>The Gemini Program</h2>
+                <p>The Gemini program primarily tested equipment and mission procedures and trained astronauts and ground crews for future Apollo missions to the Moon. The program’s main goals were: to test an astronaut’s ability to fly long duration flights (14 days); to understand how a spacecraft could rendezvous and dock with another vehicle in Earth orbit; to perfect re-entry landing methods; and to further understand the effects of longer spaceflights on astronauts. NASA selected “Gemini” because the word is Latin for “twins,” and the Gemini was a capsule built for two.</p>
+                <img src="https://i.ebayimg.com/images/g/odQAAOSw2s1cgaIt/s-l500.jpg" alt="Gemini program">
+            </p>
+            <p class="articuloHallOfFame">
+                <h2>The Aprollo Program</h2>
+                <p>Exactly eight years, one month and 26 days after President Kennedy challenged Americans to reach for the Moon, Project Apollo landed the first humans on the lunar surface and returned them safely to Earth. The Apollo program also developed technology to meet other national interests in space, conducted scientific exploration of the Moon, and developed humanity’s capability to work in the lunar environment.</p>
+                <img src="https://cdn-s3.touchofmodern.com/products/000/871/464/48e4bca1ccf41d4bf3aea24ef2144ea3_large.jpg?1510618766" alt="Apollo Program">
+            </p>
+            <p class="articuloHallOfFame">
+                <h2>The First Six Women</h2>
+                <p>The first six women selected to be NASA astronauts, 1978: (back row, left to right) Kathy Sullivan, Shannon Lucid, Anna Fischer, Judy Resnik, (seated left to right) Sally Ride and Rhea Seddon. NASA’s 1978 class of astronauts also included the first African-Americans and the first Asian American. The shuttle brought diversity to space.</p>
+                <img src="https://www.nasa.gov/wp-content/uploads/static/60counting/img/women-astronauts.jpg" alt="The First Six Women">
+            </p>
+            <p class="articuloHallOfFame">
+                <h2>Space Shuttle Era</h2>
+                <p>Over 30 years, NASA's space shuttle fleet—Columbia, Challenger, Discovery, Atlantis and Endeavour—flew 135 missions and carried 355 different people to space. Humanity's first reusable spacecraft, the space shuttle carried people into orbit repeatedly; launched, recovered and repaired satellites; conducted cutting-edge research; and built the largest structure in space, the International Space Station. The space shuttle pushed the bounds of discovery ever farther, requiring not only advanced technologies but also the tremendous efforts of thousands of civil servants and contractors throughout NASA's field centers and across the nation. Tragically, NASA lost two crews of seven in the 1986 Challenger accident and the 2003 Columbia accident.</p>
+                <img src="https://www.nasa.gov/wp-content/uploads/static/60counting/img/spaceshuttle.jpg" alt="Space Shuttle">
+            </p>
+            <p class="articuloHallOfFame">
+                <h2>Space Station Era</h2>
+                <p>The International Space Station is a unique place – a convergence of science, technology and human innovation that demonstrates new technologies and makes research breakthroughs not possible on Earth. It is a microgravity laboratory in which an international crew of six people live and work while traveling at a speed of five miles per second, orbiting Earth every 90 minutes.The ISS is divided into two main sections, the Russian Orbital Segment (ROS) and the US Orbital Segment (USOS). The first module of the International Space Station, Zarya, was launched in 1998.</p>
+                <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2529,w_4499,x_0,y_397/f_auto,q_auto,w_1100/v1558369653/shape/mentalfloss/583166-istock-1089779672_0.jpg" alt="">
+            </p>
+
+
+
+
             </section>
             <section id="wishlist">
-                <p> Estamos dentro del apartado WishList Portal </p> 
+                <!--<p> Estamos dentro del apartado WishList Portal </p> -->
+                <h3 class="h3 wishlist">Tell Us What You Would Like To See Next!</h3>
+                <form action="post">
+                    <fieldset>
+                        <label for="fname"> Full Name: </label><br>
+                        <input class="inputText fname" type="text" name="fnametext" id="fnametext"><br><br>
+                        <label for="femail"> Email Address: </label><br>
+                        <input class="inputText femail" type="text" name="femailtext" id="femailtext"><br>
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="fenjoy">Have you enjoyed this site?</label>
+                        <input type="checkbox" name="enjoyed" id="enjoyed"><br><br>
+                        
+                        <p> Please Rate this Site from 1 to 5:
+                            <ul class="listaRating">
+                                <li >
+                                    
+                                    <input type="radio" id="one" 
+                                     name="listaRating" value="one" >
+                                     <label for="One" text="One">One</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="two" 
+                                    name="listaRating" value="two" >
+                                    <label for="two" text="two">Two</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="listaRating" id="three">
+                                    <label for="thre">Three</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="listaRating" id="four">
+                                    <label for="four">Four</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="five" name="listaRating">
+                                    <label for="five">Five</label>
+                                </li>
+
+                            </ul>
+                            
+                        </p>
+                    </fieldset>
+                    
+
+                    <fieldset>
+                        <label for="wishUser"> What would you like to see next? </label><br>
+                    <input class="inputText wishUserText" type="text" name="wishUserText" id="wishUserText" ><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <button class="button buttonGuardar">Guardar</button>
+                        <button class="button buttonLimpiarinicio">Limpiar</button>
+                    </fieldset>
+                   
+                    
+
+                </form>
                 
             </section>
         </main>

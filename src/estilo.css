@@ -43,7 +43,7 @@ body {
 
 
 .barra_superior li a:hover{
-    background-color:rgb(65, 67, 139); /*rgb(253, 207, 23) rgb(38, 11, 84)*//*
+    background-color:rgb(65, 67, 139); /*rgb(253, 207, 23) rgb(65, 67, 139) rgb(38, 11, 84)*//*
     color: rgb(23, 9, 69); /*rgb(24, 10, 71)*/
     border-radius: 5px;
     margin-left: 5%;
@@ -61,15 +61,41 @@ body {
 }
 
 #inicio:target{
-    display: block;
-    width:800px;
-    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+
+    /*
     background-image: url(https://stsci-opo.org/STScI-01G77PKYA4T05YKJ3EDQ36NZCX.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:contain;
-    background-color: aliceblue;
+    background-color: aliceblue;*/
 
+}
+
+.imagenPrincipal{
+
+    background-color: #211a1a;
+    width: 100%;
+    height:100%; 
+    background-repeat: repeat;
+    background-position: center;
+    background-size:contain;
+    z-index: -1;
+}
+
+#SpaceHubTitle {
+    position: absolute;
+    top:50%; 
+    left:50%; 
+    transform: translate(-50%, -50%);
+    color: #f5f1f1; /* Color del texto */
+    font-size: 50px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    text-align: center; /* Alineación del texto */
+    font-family: arial black; 
 }
 
 
@@ -101,6 +127,30 @@ body {
 
 }
 
+.listaRating{
+    list-style-type: none;
+    
+}
+
+.button{
+    border-radius: 10%; 
+    padding: 1%;
+    font-family: arial black;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: rgb(253, 207, 23);
+    color:white;
+
+}
+
+.inputText{
+    width: 100%;
+    color:rgb(221, 54, 132); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospaced black;
+}
 
 
 
