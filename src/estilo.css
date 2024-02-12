@@ -156,6 +156,9 @@ body {
     width: 100%;
     height: 100%;
 }
+#catalogo_de_imagenes th{
+    font-size: 1.2fr;
+}
 
 #hall_of_fame img{
     width: 100px;
@@ -171,7 +174,7 @@ iframe{
 
 #catalogo_de_imagenes{
     display: grid;
-    grid-template-columns: 3fr  ; /* Divide la tabla en tres columnas de igual ancho */
+    grid-template-columns: 3fr; /* Divide la tabla en tres columnas de igual ancho */
     grid-template-rows: auto;
     justify-content: left;
     color: rgb(238, 244, 242);
