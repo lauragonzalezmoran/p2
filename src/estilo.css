@@ -300,6 +300,11 @@ span:hover {
   width:60%; 
 }
 
+.centered-paragraph {
+  width: 80%;
+  margin: 0 auto; /* Esto centra horizontalmente el párrafo */
+}
+
 
 
 
