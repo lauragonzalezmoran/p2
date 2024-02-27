@@ -293,6 +293,12 @@ span:hover {
 .header3{
   font-size: 1.5vw;
 }
+#projectMercury, #GeminiPrm, #ApolloPrm, #TheFirstSixWomen, #SpaceShuttleEra, #SpaceStationEra{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%; 
+}
 
 
 
