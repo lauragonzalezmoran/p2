@@ -51,7 +51,7 @@ body {
     
 }
 
-#museo:target, #noticias:target , #hall-of-fame:target, #wishlist:target{
+#museo:target, #noticias:target , #hall-of-fame:target, #wishlist:target, #APIs:target{
     display: block;
     position:static;
     color: #f9f5f5;
@@ -103,7 +103,7 @@ body {
 #inicio, #museo,
 #noticias,
 #hall-of-fame,
-#wishlist {
+#wishlist, #APIs{
     display: none;
     margin-top: 0px;
 }
@@ -111,7 +111,7 @@ body {
 
 
 
-*/
+
 
 .indice{
     display:grid; 
@@ -244,6 +244,81 @@ span:hover {
   background-position: 0% 100%;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
+
+
+#apod {
+    display: hidden; 
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#apod{
+    width: 90%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+
+button {
+    width:15rem;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-width: 10px;
+    background: linear-gradient(to right, #910A67, #3C0753, #030637);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: block; /* Hace que el botón sea un elemento de bloque */
+    margin: 0 auto; /* Establece márgenes automáticos a izquierda y derecha */
+    text-align: center; /* Alinea el texto dentro del botón al centro */
+  }
+  
+  button svg {
+    height: 40px;
+    width: 60px;
+    transform: translate(-80px,0px) rotate(90deg);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+  }
+  
+  button .Click { 
+    transform: translate(+30px,-55px);
+    font-size: 20px;
+    transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+  }
+  /* generate APOD*/
+  
+  button .OnHover {
+    transform: translate(-35px,-100px);
+    font-size: 20px;
+    opacity: 0%;
+    transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+  }
+  
+  button:hover svg {
+    transform: translate(90px,0px) rotate(90deg);
+  }
+  
+  button:hover .Click {
+    opacity: 0%;
+  }
+  
+  button:hover .OnHover {
+    opacity: 100%;
+  }
+  #c_multimedia{
+
+    display: block; 
+    margin-left:auto;
+    margin-right:auto;
+  }
+
 
 
 
