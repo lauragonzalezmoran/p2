@@ -253,8 +253,8 @@ span:hover {
     justify-content: center;
     text-align: center;
 }
-#apod{
-    width: 90%; 
+#apod, #image_iss{
+    width: 70%; 
     height: auto; 
     display: block;
     margin: 0 auto;
@@ -277,6 +277,8 @@ span:hover {
   content: "CLick Me"; 
 
 }
+
+
 
 /*
 
