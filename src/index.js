@@ -1,11 +1,11 @@
 
 
 //funcionalidad 1: quiero que al cargar la página te lleve directamente a la sección de Inicio
-/*document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
     // Espera a que el contenido de la página se haya cargado completamente
     // Luego, cambia la URL agregando '#inicio'
     window.location.hash = "#inicio";
-});*/
+});
 
 
 const nasaApiKey = 'yqQO5C2Bal5AhiRx9Yp3nWa8ZMs9mAlS54icgRRL'; 
