@@ -277,6 +277,10 @@ span:hover {
   content: "CLick Me"; 
 
 }
+#map {
+	height: 500px;
+	width: 100%;
+}
 
 
 

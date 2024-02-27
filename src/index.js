@@ -82,11 +82,18 @@ const mostrarVisibility = function(visibility)
 {
     visibility_iss.textContent =`Visibility: ${visibility}`;
 }
- /*const mostrarMapa = function({latitude, longitude})
- {
-    //var linkMapa = `https://api.wheretheiss.at/v1/coordinates/${latitude},${longitude}`; 
-    iss_multimedia.innerHTML = `<iframe class="embed-responsive-item" src="${`https://api.wheretheiss.at/v1/coordinates/${latitude},${longitude}`}"></iframe>`; 
- }*/
+function iniciarMap({latitude, longitude}){
+    var coord = {lat:parseFloat(latitude) ,lng: parseFloat(latitude)};
+    console.log("estoy imprimiendo la latitud",document.getElementById('latitude_iss')); 
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 6,
+      center: coord
+    });
+    var marker = new google.maps.Marker({
+      position: coord,
+      map: map
+    });}
+ 
 
 
 
@@ -98,6 +105,7 @@ const mostrarISS = function(json)
     mostrarAltitud(json );
     mostrarVelocidad(json); 
     mostrarVisibility(json && json.visibility); 
+    iniciarMap(json); 
 
 }
 
