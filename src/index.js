@@ -82,11 +82,11 @@ const mostrarVisibility = function(visibility)
 {
     visibility_iss.textContent =`Visibility: ${visibility}`;
 }
- const mostrarMapa = function({latitude, longitude})
+ /*const mostrarMapa = function({latitude, longitude})
  {
     //var linkMapa = `https://api.wheretheiss.at/v1/coordinates/${latitude},${longitude}`; 
     iss_multimedia.innerHTML = `<iframe class="embed-responsive-item" src="${`https://api.wheretheiss.at/v1/coordinates/${latitude},${longitude}`}"></iframe>`; 
- }
+ }*/
 
 
 
@@ -136,12 +136,12 @@ const getISS = function() //he intentado hacerlo por el otro método pero me sal
     {
         if (respuesta.ok)
         {
-            console.log("todo ok en el paso 1", respuesta.ok); 
+            console.log("todo ok en el paso 1 del iss", respuesta.ok); 
             return respuesta.json();   
         }
         else
         {
-            console.log("todo NO ok en el paso 1", respuesta.ok); 
+            console.log("todo NO ok en el paso 1 del iss", respuesta.ok); 
             throw respuesta.status; 
         }
     }).then(json =>
