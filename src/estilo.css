@@ -254,7 +254,7 @@ span:hover {
     text-align: center;
 }
 #apod, #image_iss{
-    width: 70%; 
+    width: 80%; 
     height: auto; 
     display: block;
     margin: 0 auto;
@@ -279,8 +279,21 @@ span:hover {
 }
 #map {
 	height: 500px;
-	width: 100%;
+	width: 80%;
+  display: block;
+    margin: 0 auto;
 }
+
+#imagenPrincipal{
+  width: 100%; 
+}
+.header2{
+  font-size: 2vw;
+}
+.header3{
+  font-size: 1.5vw;
+}
+
 
 
 

@@ -75,7 +75,7 @@ const mostrarAltitud = function({altitude, units})
 }
 const mostrarVelocidad = function({velocity, units})
 {
-    velocity_iss.textContent =`Current Velocity: ${velocity} ${units}`;
+    velocity_iss.textContent =`Current Velocity: ${velocity} ${units}/hour`;
 }
 
 const mostrarVisibility = function(visibility)
